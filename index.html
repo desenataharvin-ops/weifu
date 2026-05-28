@@ -31,7 +31,7 @@
       "servesCuisine":["Dim Sum","Chinese","Halal"],
       "priceRange":"Rp 8.000 – Rp 55.000",
       "address":{"@type":"PostalAddress","streetAddress":"Jl. Sunset Road No.168 A","addressLocality":"Kuta","addressRegion":"Bali","postalCode":"80361","addressCountry":"ID"},
-      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"02:30"}],
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"01:30"}],
       "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"1144"}
     },
     {
@@ -43,7 +43,7 @@
       "servesCuisine":["Dim Sum","Chinese","Halal"],
       "priceRange":"Rp 8.000 – Rp 55.000",
       "address":{"@type":"PostalAddress","streetAddress":"Jl. Gatot Subroto Tengah No.349 B","addressLocality":"Denpasar Utara","addressRegion":"Bali","postalCode":"80233","addressCountry":"ID"},
-      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"02:30"}],
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"01:30"}],
       "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"598"}
     },
     {
@@ -55,7 +55,7 @@
       "servesCuisine":["Dim Sum","Chinese","Halal"],
       "priceRange":"Rp 8.000 – Rp 55.000",
       "address":{"@type":"PostalAddress","streetAddress":"Jl. Ahmad Yani No.15, Abian Tuwung","addressLocality":"Kec. Kediri, Kabupaten Tabanan","addressRegion":"Bali","postalCode":"82121","addressCountry":"ID"},
-      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"02:30"}],
+      "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"01:30"}],
       "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"297"}
     },
     {
@@ -122,7 +122,7 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background: url('https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=1600&q=80') center/cover;
+      background: url('images/hero.jpg') center/cover;
       opacity: 0.15;
     }
     .hero-content {
@@ -190,6 +190,33 @@
     .pillar-icon { font-size: 2.8rem; margin-bottom: 1rem; }
     .pillar h3 { font-size: 1.15rem; font-weight: 800; color: var(--red); margin-bottom: 0.5rem; }
     .pillar p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+    /* GALLERY */
+    .gallery-sec { background: #fff; padding: 4rem 5%; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%; height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .gallery-grid img:hover { transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+    .gallery-grid img.wide { grid-column: span 2; height: 280px; }
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid img.wide { grid-column: span 2; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-grid img.wide { grid-column: span 1; }
+    }
 
     /* SECTION HEADER */
     .sec-head { text-align: center; padding: 3.5rem 5% 2rem; }
@@ -293,6 +320,12 @@
       font-size: 0.8rem; font-weight: 700;
     }
     .btn-gofood:hover { background: #d95b0f; }
+    .btn-wa {
+      background: #25D366; color: #fff;
+      padding: 0.5rem 1.1rem; border-radius: 25px;
+      font-size: 0.8rem; font-weight: 700;
+    }
+    .btn-wa:hover { background: #1ebe5d; }
 
     /* ORDER CTA */
     .order-sec {
@@ -430,6 +463,24 @@
     <div class="pillar-icon">🍽️</div>
     <h3>60+ Menu Pilihan</h3>
     <p>Steam hakau, cheung fen, bakmi, sup, bubur, hingga goreng – semua cita rasa ada di satu tempat.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <div class="sec-head" style="padding-top:0">
+    <div class="sec-tag">Foto Makanan</div>
+    <h2>Lihat Sebelum Memesan</h2>
+    <p>Semua foto adalah makanan asli dari Wei Fu Dimsum Bar Bali.</p>
+  </div>
+  <div class="gallery-grid">
+    <img src="images/gallery-1.jpg" alt="Berbagai menu dim sum Wei Fu Bali di atas meja" class="wide">
+    <img src="images/gallery-3.jpg" alt="Bamboo steamer dim sum Wei Fu dengan cakwe goreng">
+    <img src="images/food-1.jpg" alt="Steam ceker ayam Wei Fu Dimsum Bar">
+    <img src="images/food-2.jpg" alt="Cheung Fun Ayam Cincang Wei Fu">
+    <img src="images/food-3.jpg" alt="Steam Xiao Long Bao Wei Fu Dimsum">
+    <img src="images/food-4.jpg" alt="Onde Onde Telur Asin Wei Fu">
+    <img src="images/food-5.jpg" alt="Soup Wonton Wei Fu Dimsum Bar" class="wide">
   </div>
 </section>
 
@@ -618,6 +669,7 @@
         <div class="loc-actions">
           <a href="https://maps.google.com/?q=Wei+Fu+Dimsum+Bar+Sunset+Road+Kuta+Bali" target="_blank" rel="noopener" class="btn-maps">📍 Google Maps</a>
           <a href="https://gofood.co.id/en/bali/restaurant/wei-fu-dimsum-bar-jalan-sunset-road-no-168-a-e288d7ad-352a-436e-b08c-1b91d56010e7" target="_blank" rel="noopener" class="btn-gofood">🛵 GoFood</a>
+          <a href="https://wa.me/6288221933007?text=Halo%20Wei%20Fu%20Sunset%20Road!%20Saya%20mau%20tanya%20mengenai%20reservasi." target="_blank" rel="noopener" class="btn-wa">💬 WhatsApp</a>
         </div>
       </div>
     </div>
@@ -635,6 +687,7 @@
         <div class="loc-actions">
           <a href="https://maps.google.com/?q=Wei+Fu+Dimsum+Bar+Gatsu+Denpasar+Bali" target="_blank" rel="noopener" class="btn-maps">📍 Google Maps</a>
           <a href="https://gofood.co.id/en/bali/restaurant/wei-fu-dimsum-bar-gatsu-3b3d01f3-3e1e-4561-9122-3ce2789ef1a6" target="_blank" rel="noopener" class="btn-gofood">🛵 GoFood</a>
+          <a href="https://wa.me/628873059630?text=Halo%20Wei%20Fu%20Gatsu!%20Saya%20mau%20tanya%20mengenai%20reservasi." target="_blank" rel="noopener" class="btn-wa">💬 WhatsApp</a>
         </div>
       </div>
     </div>
@@ -652,6 +705,7 @@
         <div class="loc-actions">
           <a href="https://maps.google.com/?q=Wei+Fu+Dimsum+Bar+Tabanan+Bali" target="_blank" rel="noopener" class="btn-maps">📍 Google Maps</a>
           <a href="https://gofood.co.id/bali/restaurant/wei-fu-dimsum-bar-tabanan-aaf21f6e-0041-4b3d-90f3-1ce2276db16c" target="_blank" rel="noopener" class="btn-gofood">🛵 GoFood</a>
+          <a href="https://wa.me/62881011307561?text=Halo%20Wei%20Fu%20Tabanan!%20Saya%20mau%20tanya%20mengenai%20reservasi." target="_blank" rel="noopener" class="btn-wa">💬 WhatsApp</a>
         </div>
       </div>
     </div>
