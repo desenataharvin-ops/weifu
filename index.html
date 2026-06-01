@@ -459,9 +459,10 @@
       overflow: hidden; max-height: 0;
       transition: max-height 0.35s var(--ease), opacity 0.25s;
       opacity: 0; pointer-events: none;
+      visibility: hidden;
       min-width: 240px;
     }
-    .float-panel.open { max-height: 400px; opacity: 1; pointer-events: auto; }
+    .float-panel.open { max-height: 400px; opacity: 1; pointer-events: auto; visibility: visible; }
     .fp-branch {
       padding: 0.7rem 1rem;
       border-bottom: 1px solid rgba(42,16,16,0.06);
