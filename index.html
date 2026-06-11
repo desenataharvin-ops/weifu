@@ -321,6 +321,14 @@
     .mr-price { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 400; color: var(--gold-lt); white-space: nowrap; }
     .menu-note { color: rgba(251,245,235,0.2); font-size: 0.68rem; letter-spacing: 0.05em; margin-top: 2.5rem; text-align: center; }
 
+    /* ── SEASONAL ─────────────────────────────────────── */
+    .seasonal { padding: 6rem 5% 0; background: var(--cream-dk); }
+    .seasonal-badge { display: inline-block; background: var(--red); color: var(--white); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; padding: 0.4rem 1rem; margin-bottom: 1rem; }
+    .seasonal-desc { font-size: 0.95rem; line-height: 1.75; color: var(--muted); max-width: 560px; margin-top: 0.8rem; }
+    .seasonal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; max-width: 720px; }
+    .seasonal-grid img { width: 100%; height: auto; border-radius: 3px; box-shadow: 0 8px 40px rgba(23,8,8,0.12); }
+    @media (max-width: 600px) { .seasonal-grid { grid-template-columns: 1fr; } }
+
     /* ── MENU VISUAL ──────────────────────────────────── */
     .menu-visual { padding: 7rem 5%; background: var(--cream-dk); }
     .menu-visual-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
@@ -823,6 +831,17 @@
   </div>
 
   <p class="menu-note">* Semua harga belum termasuk service charge 5% dan pajak 10% &nbsp;·&nbsp; Harga dapat berbeda antar cabang</p>
+</section>
+
+<!-- SEASONAL -->
+<section class="seasonal" id="seasonal">
+  <div class="seasonal-badge reveal">Seasonal · Waktu Terbatas</div>
+  <h2 class="sec-title reveal d1">Matcha Lava <em>Xiao Long Bao</em></h2>
+  <p class="seasonal-desc reveal d2">Yang baru di Wei Fu — xiao long bao kukus dengan isian lava matcha yang lumer di gigitan pertama. Tersedia terbatas di semua cabang Kuta, Denpasar &amp; Tabanan. Coba selagi masih ada!</p>
+  <div class="seasonal-grid reveal d2">
+    <img src="images/matcha-lava-xiao-long-bao-1.jpg" alt="Matcha Lava Xiao Long Bao Wei Fu Dimsum Bar Bali – menu seasonal waktu terbatas" loading="lazy" width="1054" height="1492">
+    <img src="images/matcha-lava-xiao-long-bao-2.jpg" alt="Xiao Long Bao isi lava matcha lumer dalam keranjang bambu – seasonal menu Wei Fu" loading="lazy" width="1054" height="1492">
+  </div>
 </section>
 
 <!-- MENU VISUAL -->
