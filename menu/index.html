@@ -195,6 +195,23 @@
   fbq('track', 'PageView');
   </script>
   <!-- End Meta Pixel Code -->
+<style>/* wf-foot */
+.wf-foot{background:#170808;color:rgba(251,245,235,.6);padding:4rem 5% 0;font-size:.85rem;line-height:1.7;position:relative;margin:0;text-align:left}
+.wf-foot *{box-sizing:border-box}
+.wf-foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;max-width:1200px;margin:0 auto;padding-bottom:3rem}
+.wf-foot-logo{display:inline-block;background:#FBF5EB;padding:.55rem 1rem;margin-bottom:1.1rem;line-height:0}
+.wf-foot-logo img{height:38px!important;width:auto!important;max-width:none;display:block;filter:none;transform:none}
+.wf-foot-brand p{margin:0 0 .4rem;max-width:300px;color:rgba(251,245,235,.55)}
+.wf-foot h4{margin:0 0 1rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#D4A843;font-weight:600;font-family:inherit}
+.wf-foot ul{list-style:none;margin:0;padding:0;display:block}
+.wf-foot li{margin:0 0 .55rem;padding:0;display:block}
+.wf-foot a{color:rgba(251,245,235,.72);text-decoration:none;transition:color .2s}
+.wf-foot a:hover{color:#fff}
+.wf-foot-bottom{border-top:1px solid rgba(251,245,235,.1);max-width:1200px;margin:0 auto;padding:1.4rem 0 5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;font-size:.72rem;color:rgba(251,245,235,.38)}
+.wf-foot-bottom p{margin:0}
+@media(max-width:900px){.wf-foot-grid{grid-template-columns:1fr 1fr}.wf-foot-brand{grid-column:1/-1}}
+@media(max-width:520px){.wf-foot-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
   <noscript><img height="1" width="1" style="display:none"
@@ -542,30 +559,14 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo-wrap"><img src="/images/logo.png" alt="Wei Fu Dimsum Bar" loading="lazy" width="1748" height="1240"></div>
-      <p>Dim Sum Authentic · No Pork · No Lard · No Angciu<br>3 Cabang di Bali · Buka Setiap Hari 08.00 hingga larut malam</p>
-    </div>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="/">Beranda</a>
-      <a href="/menu">Menu</a>
-      <a href="/dimsum-kuta">Kuta</a>
-      <a href="/dimsum-denpasar">Denpasar</a>
-      <a href="/dimsum-tabanan">Tabanan</a>
-      <a href="/best-dim-sum-bali">Best Dim Sum Bali</a>
-      <a href="/xiao-long-bao-bali">Xiao Long Bao</a>
-      <a href="/dimsum-buka-malam-bali">Dimsum Buka Malam</a>
-      <a href="/dimsum-no-pork-bali">Dimsum No Pork</a>
-      <a href="https://www.instagram.com/weifudimsum/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@weifudimsum" target="_blank">TikTok</a>
-    </nav>
+<footer class="wf-foot">
+  <div class="wf-foot-grid">
+    <div class="wf-foot-brand"><a href="/" class="wf-foot-logo"><img src="/images/logo.png" alt="Wei Fu Dimsum Bar" width="1748" height="1240" loading="lazy"></a><p>Dim Sum Authentic · No Pork · No Lard · No Angciu</p><p>3 cabang di Bali: Kuta, Denpasar &amp; Tabanan. Buka setiap hari mulai 08.00.</p></div>
+    <div><h4>Menu &amp; Panduan</h4><ul><li><a href="/">Beranda</a></li><li><a href="/menu">Menu Lengkap</a></li><li><a href="/panduan-dimsum-bali">Panduan Dimsum Bali</a></li><li><a href="/best-dim-sum-bali">Best Dim Sum in Bali</a></li><li><a href="/xiao-long-bao-bali">Xiao Long Bao</a></li><li><a href="/dimsum-buka-malam-bali">Dimsum Buka Malam</a></li><li><a href="/dimsum-no-pork-bali">Dimsum No Pork</a></li></ul></div>
+    <div><h4>Cabang</h4><ul><li><a href="/dimsum-kuta">Dimsum Kuta · Sunset Road</a></li><li><a href="/dimsum-denpasar">Dimsum Denpasar · Gatsu</a></li><li><a href="/dimsum-tabanan">Dimsum Tabanan</a></li></ul></div>
+    <div><h4>Ikuti Kami</h4><ul><li><a href="https://www.instagram.com/weifudimsum/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@weifudimsum" target="_blank" rel="noopener">TikTok</a></li><li><a href="/zh/">中文版</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2026 Wei Fu Dimsum Bar · Bali</p>
-    <p>Harga belum termasuk service charge 5% + pajak 10% · Harga dapat berbeda antar cabang</p>
-  </div>
+  <div class="wf-foot-bottom"><p>© 2026 Wei Fu Dimsum Bar · Bali</p><p>Harga belum termasuk service charge 5% + pajak 10%</p></div>
 </footer>
 
 <script>

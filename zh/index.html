@@ -219,6 +219,23 @@
   fbq('track', 'PageView');
   </script>
   <!-- End Meta Pixel Code -->
+<style>/* wf-foot */
+.wf-foot{background:#170808;color:rgba(251,245,235,.6);padding:4rem 5% 0;font-size:.85rem;line-height:1.7;position:relative;margin:0;text-align:left}
+.wf-foot *{box-sizing:border-box}
+.wf-foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:2.5rem;max-width:1200px;margin:0 auto;padding-bottom:3rem}
+.wf-foot-logo{display:inline-block;background:#FBF5EB;padding:.55rem 1rem;margin-bottom:1.1rem;line-height:0}
+.wf-foot-logo img{height:38px!important;width:auto!important;max-width:none;display:block;filter:none;transform:none}
+.wf-foot-brand p{margin:0 0 .4rem;max-width:300px;color:rgba(251,245,235,.55)}
+.wf-foot h4{margin:0 0 1rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#D4A843;font-weight:600;font-family:inherit}
+.wf-foot ul{list-style:none;margin:0;padding:0;display:block}
+.wf-foot li{margin:0 0 .55rem;padding:0;display:block}
+.wf-foot a{color:rgba(251,245,235,.72);text-decoration:none;transition:color .2s}
+.wf-foot a:hover{color:#fff}
+.wf-foot-bottom{border-top:1px solid rgba(251,245,235,.1);max-width:1200px;margin:0 auto;padding:1.4rem 0 5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;font-size:.72rem;color:rgba(251,245,235,.38)}
+.wf-foot-bottom p{margin:0}
+@media(max-width:900px){.wf-foot-grid{grid-template-columns:1fr 1fr}.wf-foot-brand{grid-column:1/-1}}
+@media(max-width:520px){.wf-foot-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
   <noscript><img height="1" width="1" style="display:none"
@@ -434,23 +451,14 @@
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo-wrap"><img src="/images/logo.png" alt="微富 Wei Fu 点心吧" loading="lazy" width="1748" height="1240"></div>
-      <p>正宗点心 · 无猪肉 · 无猪油 · 无料酒<br>巴厘岛3家分店 · 每天 08:00 起营业至深夜</p>
-    </div>
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="/zh/#menu">菜单</a>
-      <a href="/zh/#locations">分店</a>
-      <a href="/">Bahasa Indonesia</a>
-      <a href="https://www.instagram.com/weifudimsum/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@weifudimsum" target="_blank">TikTok</a>
-    </nav>
+<footer class="wf-foot">
+  <div class="wf-foot-grid">
+    <div class="wf-foot-brand"><a href="/" class="wf-foot-logo"><img src="/images/logo.png" alt="Wei Fu Dimsum Bar" width="1748" height="1240" loading="lazy"></a><p>正宗点心 · 无猪肉 · 无猪油 · 无料酒</p><p>巴厘岛3家分店：库塔、登巴萨、塔巴南。每天 08:00 起营业。</p></div>
+    <div><h4>菜单与指南</h4><ul><li><a href="/zh/">首页</a></li><li><a href="/menu">完整菜单</a></li><li><a href="/panduan-dimsum-bali">巴厘岛点心指南</a></li><li><a href="/best-dim-sum-bali">Best Dim Sum in Bali</a></li><li><a href="/xiao-long-bao-bali">小笼包</a></li></ul></div>
+    <div><h4>分店</h4><ul><li><a href="/dimsum-kuta">库塔 Sunset Road</a></li><li><a href="/dimsum-denpasar">登巴萨 Gatsu</a></li><li><a href="/dimsum-tabanan">塔巴南 Tabanan</a></li></ul></div>
+    <div><h4>关注我们</h4><ul><li><a href="https://www.instagram.com/weifudimsum/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@weifudimsum" target="_blank" rel="noopener">TikTok</a></li><li><a href="/">Bahasa Indonesia</a></li></ul></div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2026 微富 Wei Fu 点心吧 · 巴厘岛 · 价格另加 5% 服务费 + 10% 税费</p>
-  </div>
+  <div class="wf-foot-bottom"><p>© 2026 微富 Wei Fu 点心吧 · 巴厘岛</p><p>价格不含 5% 服务费及 10% 税</p></div>
 </footer>
 
 <a href="#locations" class="float-order"><button class="float-main">🛵 立即订餐</button></a>
